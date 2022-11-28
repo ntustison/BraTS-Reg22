@@ -1,0 +1,4 @@
+*.DS_Store
+*.nii.gz
+*.mat
+*landmarks.csv

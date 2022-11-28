@@ -1,0 +1,12 @@
+This is version 3 of the training dataset for Brain Tumor Sequence Registration (BraTS-Reg) challenge, 2022.
+
+We identified 9 cases of the training set that required some updates in a few of the provided landmark annotations. These cases (indicated below) are now updated to more precise locations. 
+BraTSReg_054
+BraTSReg_062
+BraTSReg_064
+BraTSReg_076
+BraTSReg_086
+BraTSReg_127
+BraTSReg_130
+BraTSReg_135
+BraTSReg_139
