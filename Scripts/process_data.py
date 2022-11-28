@@ -8,7 +8,7 @@ import time
 
 os.environ["ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS"] = "4"
 
-base_directory = "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/"
+base_directory = "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/Data/"
 
 write_xfrm_output = True
 

@@ -1,7 +1,7 @@
 library( ggplot2 )
 library( reshape )
 
-baseDirectory <- "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/Scripts/"
+baseDirectory <- "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/Analysis/"
 
 resultsAffine <- read.csv( paste0( baseDirectory, "resultsAffine.csv" ) )
 resultsSyNQuick <- read.csv( paste0( baseDirectory, "resultsSyNQuick.csv" ) )

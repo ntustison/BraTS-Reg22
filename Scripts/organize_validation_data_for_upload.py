@@ -6,7 +6,7 @@ os.environ["ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS"] = "4"
 
 base_directory = "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/"
 
-subjects = glob.glob(base_directory + "BraTSReg_Validation_Processed/BraTSReg_*")
+subjects = glob.glob(base_directory + "Data/BraTSReg_Validation_Processed/BraTSReg_*")
 
 for i in range(len(subjects)):
     
@@ -32,7 +32,7 @@ for i in range(len(subjects)):
             else:
                 experiment = "_".join(tokens[2:6])
 
-        output_directory = base_directory + "BraTSReg_Validation_Processed_Upload" + "/" + experiment
+        output_directory = base_directory + "Data/BraTSReg_Validation_Processed_Upload" + "/" + experiment
         if not os.path.exists(output_directory):
             os.makedirs(output_directory, exist_ok=True)
 
