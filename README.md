@@ -24,7 +24,7 @@ ANTsX evaluation in the BrATs-Reg22 challenge
 >>>
 >>> moving_points = np.zeros(moving_indices.shape)
 >>> for j in range(moving_indices.shape[0]):
->>>     moving_points[j,:] = ants.transform_index_to_physical_point(baseline_images[0], (moving_indices.iloc[j].values).astype(int))
+>>>     moving_points[j,:] = ants.transform_index_to_physical_point(baseline_image, (moving_indices.iloc[j].values).astype(int))
 >>> 
 >>> moving_points_df = pd.DataFrame(data = {'x': moving_points[:,0], 'y': moving_points[:,1], 'z': moving_points[:,2]})
 >>> moving_warped_points = ants.apply_transforms_to_points(3, moving_points_df, reg['invtransforms'], whichtoinvert=(True, False))   
