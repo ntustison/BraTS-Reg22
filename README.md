@@ -71,6 +71,10 @@ $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError
       
 ### Timing (in seconds)
 
+* Mac Pro 2020
+* 2.5 GHz 28-Core Intel Xeon W
+* Using 56 threads
+
 | Transform | Single modality | Two modalities |
 | :---        |    :----:   |          ---: |
 antsRegistrationSyNQuick[a]         |  4.6  |   NA
