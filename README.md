@@ -68,7 +68,8 @@ $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError
   <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png" width="400" />
   <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png" width="400" /> 
 </p>
-      
+
+
 ### Timing (in seconds)
 
 * Mac Pro 2020
@@ -85,7 +86,10 @@ antsRegistrationSyN[b,2,26]         | 273.1 |  382.0
 antsRegistrationSyN[s,4]            | 344.2 |  610.7
 antsRegistrationSyN[b,4,26]         | 446.2 |  720.5
       
-## Apply antsRegistrationSyN[s,2] to validation data
+## Apply antsRegistrationSyN[s,2] with T1-contrast enhanced to validation data
+        
+The choice of antsRegistrationSyN[s,2] with T1-contrast enhanced is due to combined 
+performance and timing considerations.        
         
 ```python
 >>> import ants
