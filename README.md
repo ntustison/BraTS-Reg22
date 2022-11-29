@@ -74,7 +74,7 @@ $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError
 
 * Mac Pro 2020
 * 2.5 GHz 28-Core Intel Xeon W
-* Using 56 threads
+* `os.environ["ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS"] = "56"`
 
 | Parameter set | Single modality | Two modalities |
 | :---        |    :----:   |          ---: |
