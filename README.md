@@ -32,9 +32,9 @@
         * iterations per level = [100,70,50,0]
         * shrink factors per level = [8,4,2,1]
         * smoothing factor per level = [3,2,1,0] (voxels) 
-* antsRegistrationSyNQuick[b,32] 
-        * B-spline-based (mesh size per stage = [26,13,6.5,3.25] (mm)) 
-        * other metrics same as "antsRegistrationSyNQuick[s,32]" 
+* antsRegistrationSyNQuick[b,32]
+    * B-spline-based (mesh size per stage = [26,13,6.5,3.25] (mm)) 
+    * other metrics same as "antsRegistrationSyNQuick[s,32]" 
 * antsRegistrationSyN[s,2]
     * Rigid stage 
         * similarity metric = MI with 32 bins
@@ -57,6 +57,13 @@
     * Same as "antsRegistrationSyN[s,2]" with CC radius of 4
 * antsRegistrationSyN[b,4,26]
     * B-spline-based version of "antsRegistrationSyN[s,4]"
+
+## Training data results
+
+Accuracy           |  Median accuracy
+:-------------------------:|:-------------------------:
+![]([https://...Dark.png](https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png))  |  ![]([https://...Ocean.png](https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png))
+
     
 ## Chosen parameter set for validation and test data, "antsRegistrationSyN[s,2]"
         
