@@ -64,9 +64,9 @@
 
 $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError_{pre}} $$
 
-<p float="middle">
-  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png" width="300" />
-  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png" width="300" /> 
+<p align="middle">
+  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png" width="400" />
+  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png" width="400" /> 
 </p>
       
 ### Timing (in seconds)
