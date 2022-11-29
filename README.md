@@ -9,7 +9,7 @@
 * T1-contrast enhanced + T2
 * T1-contrast enhanced + FLAIR
 
-## Transform parameter sets to test on training data
+## Parameter sets to test on training data
 
 * antsRegistrationSyNQuick[a]
     * Rigid stage 
@@ -25,7 +25,7 @@
         * Same as "antsRegistrationSyNQuick[a]"
     * Affine stage
         * Same as "antsRegistrationSyNQuick[a]"
-    * Syn stage
+    * SyN stage
         * Gaussian-based
         * similarity metric = MI with 32 bins
         * gradient step = 0.1
@@ -44,7 +44,7 @@
         * smoothing factor per level = [3,2,1,0] (voxels)    
     * Affine stage
         * Same as rigid stage
-    * Syn stage
+    * SyN stage
         * Gaussian-based
         * similarity metric = CC with neighborhood radius of 2
         * gradient step = 0.1
@@ -75,7 +75,7 @@ $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError
 * 2.5 GHz 28-Core Intel Xeon W
 * Using 56 threads
 
-| Transform | Single modality | Two modalities |
+| Parameter set | Single modality | Two modalities |
 | :---        |    :----:   |          ---: |
 antsRegistrationSyNQuick[a]         |  4.6  |   NA
 antsRegistrationSyNQuick[b,32,26]   | 39.8  |   38.5
