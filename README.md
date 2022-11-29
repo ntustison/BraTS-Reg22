@@ -1,6 +1,6 @@
 # ANTsX evaluation in the [BraTS-Reg22 challenge](https://www.med.upenn.edu/cbica/brats-reg-challenge/)
 
-## Modalities tested
+## Modalities to test on training data
 
 * T1
 * T1-contrast enhanced
@@ -9,7 +9,7 @@
 * T1-contrast enhanced + T2
 * T1-contrast enhanced + FLAIR
 
-## Transform parameter sets
+## Transform parameter sets to test on training data
 
 * antsRegistrationSyNQuick[a]
     * Rigid stage 
@@ -60,12 +60,14 @@
 
 ## Training data results
 
-Accuracy           |  Median accuracy
-:-------------------------:|:-------------------------:
-![]([https://...Dark.png](https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png))  |  ![]([https://...Ocean.png](https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png))
+$$ Accuracy = 1.0 - \frac{LandmarkError_{post}}{LandmarkError_{pre}} $$
 
-    
-## Chosen parameter set for validation and test data, "antsRegistrationSyN[s,2]"
+<p float="left">
+  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png" width="450" />
+  <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png" width="450" /> 
+</p>
+      
+## Apply antsRegistrationSyN[s,2] to validation data
         
 ```python
 >>> import ants
