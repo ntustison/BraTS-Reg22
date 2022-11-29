@@ -60,12 +60,26 @@
 
 ## Training data results
 
+### Accuracy
+
 $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError_{pre}} $$
 
 <p float="left">
   <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracyBox.png" width="450" />
   <img src="https://github.com/ntustison/BraTS-Reg22/blob/main/Analysis/accuracy.png" width="450" /> 
 </p>
+      
+### Timing (in seconds)
+
+| Transform | Single modality | Two modalities |
+| :---        |    :----:   |          ---: |
+antsRegistrationSyNQuick[a]         |  4.6  |   NA
+antsRegistrationSyNQuick[b,32,26]   | 39.8  |   38.5
+antsRegistrationSyNQuick[s,32]      | 27.7  |  28.3
+antsRegistrationSyN[s,2]            | 169.2 |  272.1
+antsRegistrationSyN[b,2,26]         | 273.1 |  382.0
+antsRegistrationSyN[s,4]            | 344.2 |  610.7
+antsRegistrationSyN[b,4,26]         | 446.2 |  720.5
       
 ## Apply antsRegistrationSyN[s,2] to validation data
         
