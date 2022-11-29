@@ -6,7 +6,7 @@ import pandas as pd
 import math
 import time
 
-os.environ["ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS"] = "4"
+os.environ["ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS"] = "56"
 
 base_directory = "/Users/ntustison/Data/Public/BRATS/RegistrationCompetition2022/Data/"
 
