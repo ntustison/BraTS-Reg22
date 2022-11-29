@@ -13,7 +13,7 @@
 
 * antsRegistrationSyNQuick[a]
     * Rigid stage 
-        * similarity metric = MI with 32 bins
+        * similarity metric:  MI with 32 bins
         * gradient step = 0.1
         * iterations per level = [1000,500,250,0]
         * shrink factors per level = [8,4,2,1]
@@ -27,7 +27,7 @@
         * Same as "antsRegistrationSyNQuick[a]"
     * SyN stage
         * Gaussian-based
-        * similarity metric = MI with 32 bins
+        * similarity metric:  MI with 32 bins
         * gradient step = 0.1
         * iterations per level = [100,70,50,0]
         * shrink factors per level = [8,4,2,1]
@@ -37,7 +37,7 @@
     * other metrics same as "antsRegistrationSyNQuick[s,32]" 
 * antsRegistrationSyN[s,2]
     * Rigid stage 
-        * similarity metric = MI with 32 bins
+        * similarity metric:  MI with 32 bins
         * gradient step = 0.1
         * iterations per level = [1000,500,250,100]
         * shrink factors per level = [8,4,2,1]
@@ -46,7 +46,7 @@
         * Same as rigid stage
     * SyN stage
         * Gaussian-based
-        * similarity metric = CC with neighborhood radius of 2
+        * similarity metric: CC with neighborhood radius of 2
         * gradient step = 0.1
         * iterations per level = [100,70,50,20]
         * shrink factors per level = [8,4,2,1]
