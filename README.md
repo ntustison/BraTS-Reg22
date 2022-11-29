@@ -1,7 +1,66 @@
 # ANTsX evaluation in the [BraTS-Reg22 challenge](https://www.med.upenn.edu/cbica/brats-reg-challenge/)
 
+## Modalities tested
 
-```
+* T1
+* T1-contrast enhanced
+* T2
+* FLAIR
+* T1-contrast enhanced + T2
+* T1-contrast enhanced + FLAIR
+
+## Transform parameter sets
+
+* antsRegistrationSyNQuick[a]
+    * Rigid stage 
+        * similarity metric = MI with 32 bins
+        * gradient step = 0.1
+        * iterations per level = [1000,500,250,0]
+        * shrink factors per level = [8,4,2,1]
+        * smoothing factor per level = [3,2,1,0] (voxels)
+    * Affine stage
+        * same parameters as affine stage
+* antsRegistrationSyNQuick[s,32]
+    * Rigid stage 
+        * Same as "antsRegistrationSyNQuick[a]"
+    * Affine stage
+        * Same as "antsRegistrationSyNQuick[a]"
+    * Syn stage
+        * Gaussian-based
+        * similarity metric = MI with 32 bins
+        * gradient step = 0.1
+        * iterations per level = [100,70,50,0]
+        * shrink factors per level = [8,4,2,1]
+        * smoothing factor per level = [3,2,1,0] (voxels) 
+* antsRegistrationSyNQuick[b,32] 
+        * B-spline-based (mesh size per stage = [26,13,6.5,3.25] (mm)) 
+        * other metrics same as "antsRegistrationSyNQuick[s,32]" 
+* antsRegistrationSyN[s,2]
+    * Rigid stage 
+        * similarity metric = MI with 32 bins
+        * gradient step = 0.1
+        * iterations per level = [1000,500,250,100]
+        * shrink factors per level = [8,4,2,1]
+        * smoothing factor per level = [3,2,1,0] (voxels)    
+    * Affine stage
+        * Same as rigid stage
+    * Syn stage
+        * Gaussian-based
+        * similarity metric = CC with neighborhood radius of 2
+        * gradient step = 0.1
+        * iterations per level = [100,70,50,20]
+        * shrink factors per level = [8,4,2,1]
+        * smoothing factor per level = [3,2,1,0] (voxels)
+* antsRegistrationSyN[b,2,26]
+    * B-spline-based version of "antsRegistrationSyN[s,2]"
+* antsRegistrationSyN[s,4]
+    * Same as "antsRegistrationSyN[s,2]" with CC radius of 4
+* antsRegistrationSyN[b,4,26]
+    * B-spline-based version of "antsRegistrationSyN[s,4]"
+    
+## Chosen parameter set for validation and test data, "antsRegistrationSyN[s,2]"
+        
+```python
 >>> import ants
 >>> import pandas as pd
 >>>
