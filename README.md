@@ -1,5 +1,7 @@
 # ANTsX evaluation in the [BraTS-Reg22 challenge](https://www.med.upenn.edu/cbica/brats-reg-challenge/)
 
+_Goodhart's law strikes again_
+
 ## Modalities to test on training data
 
 * T1
