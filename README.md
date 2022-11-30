@@ -1,5 +1,8 @@
 # ANTsX evaluation in the [BraTS-Reg22 challenge](https://www.med.upenn.edu/cbica/brats-reg-challenge/)
 
+* [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
+* [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
+
 ## Modalities to test on training data
 
 * T1
@@ -127,9 +130,6 @@ performance and timing considerations.
 -----------------------------------------------------------
 
 ## Goodhart's Law
-
-* [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
-* [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
 
 ![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204690199-685a44e3-b7d4-4d25-a19b-40b06c50c29d.png)
 
