@@ -125,6 +125,10 @@ performance and timing considerations.
 >>> moving_warped_points_df.to_csv(warped_followup_landmark_file, index=False)
 ```
 -----------------------------------------------------------
+
+* [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
+* [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
+
 ![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204690199-685a44e3-b7d4-4d25-a19b-40b06c50c29d.png)
 
 
