@@ -1,7 +1,5 @@
 # ANTsX evaluation in the [BraTS-Reg22 challenge](https://www.med.upenn.edu/cbica/brats-reg-challenge/)
 
-_Goodhart's law strikes again_
-
 ## Modalities to test on training data
 
 * T1
@@ -87,9 +85,11 @@ antsRegistrationSyN[s,2]            | 169.2 |  272.1
 antsRegistrationSyN[b,2,26]         | 273.1 |  382.0
 antsRegistrationSyN[s,4]            | 344.2 |  610.7
 antsRegistrationSyN[b,4,26]         | 446.2 |  720.5
-      
+
+--------------------------------------------------------------------------------------------------------
+
 ## Apply antsRegistrationSyN[s,2] with T1-contrast enhanced to validation data
-        
+
 The choice of antsRegistrationSyN[s,2] with T1-contrast enhanced is due to combined 
 performance and timing considerations.        
         
@@ -124,3 +124,8 @@ performance and timing considerations.
 >>> moving_warped_points_df.insert(0, "Landmark", list(range(1, moving_points.shape[0]+1)))
 >>> moving_warped_points_df.to_csv(warped_followup_landmark_file, index=False)
 ```
+-----------------------------------------------------------
+![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204679627-3ded213f-351d-4a9a-8125-33f80f89bf17.png)
+
+
+
