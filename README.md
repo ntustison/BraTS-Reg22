@@ -125,7 +125,7 @@ performance and timing considerations.
 >>> moving_warped_points_df.to_csv(warped_followup_landmark_file, index=False)
 ```
 -----------------------------------------------------------
+![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204688577-e560b992-d2af-4bdd-9ee6-2c47674cc946.png)
 
-![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204687925-f8032897-c7dc-4dfd-b614-2f3a14e22c25.png)
 
 
