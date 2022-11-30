@@ -126,6 +126,8 @@ performance and timing considerations.
 ```
 -----------------------------------------------------------
 
+## Goodhart's Law
+
 * [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
 * [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
 
