@@ -112,7 +112,7 @@ performance and timing considerations.
 >>> 
 >>> reg = ants.registration(baseline_image, followup_image, type_of_transform="antsRegistrationSyN[s,2]", verbose=1)
 >>>
->>> moving_indices = pd.read_csv(followup_landmark_filename).drop('Landmark', axis=1)
+>>> moving_indices = pd.read_csv(followup_landmark_file).drop('Landmark', axis=1)
 >>> moving_indices = moving_indices.rename(columns={'X' : 'x', 'Y' : 'y', 'Z' : 'z'})
 >>> moving_indices['y'] = moving_indices['y'] + 239
 >>>
