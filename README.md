@@ -129,8 +129,6 @@ performance and timing considerations.
 ```
 -----------------------------------------------------------
 
-## Goodhart's Law
-
 ![GoodhartsLaw](https://user-images.githubusercontent.com/324811/204690199-685a44e3-b7d4-4d25-a19b-40b06c50c29d.png)
 
 
