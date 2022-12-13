@@ -65,6 +65,9 @@
 
 ### Accuracy
 
+Although the organizers employed several metrics for evaluating performance, we 
+employed the following "accuracy improvement" measure for assessment:
+
 $$ \text{Accuracy improvement} = 1.0 - \frac{LandmarkError_{post}}{LandmarkError_{pre}} $$
 
 <p align="middle">
