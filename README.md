@@ -3,6 +3,14 @@
 * [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
 * [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
 
+## Written description
+
+Testing data were processed using vetted registration parameter sets [1--3] which have been 
+packaged in the different ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR.  Each of these
+parameter sets consist of multiple transform stages for determining anatomical corresponce.
+Initial center of (intensity) mass alignment is refined by optimization of both rigid and
+affine transforms using mutual information as the similarity metric [4].  Deformable 
+
 ## Modalities to test on training data
 
 * T1
