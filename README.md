@@ -3,17 +3,17 @@
 * [Training phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardTraining.html)
 * [Validation phase leaderboard](https://www.cbica.upenn.edu/BraTSReg2022/lboardValidation.html)
 
-## Written description
+## Description
 
 BraTS-Reg22 data were processed using previously vetted and frequently used
-registration parameter sets [1-2] which have been packaged in the different
-ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR. Each of these parameter
+registration parameter sets [1-2] which have been packaged within the different
+ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR [3]. Each of these parameter
 sets consists of multiple transform stages for determining anatomical
 corresponce. Initial linear estimation of transform parameters comprises center
 of (intensity) mass alignment followed by optimization of both rigid and affine
-transforms using mutual information as the similarity metric [3]. The final
-deformable alignment utilizes symmetric normalization (SyN) with Gaussian [4] or
-B-spline [5] regularization and a neighborhood cross-correlation [4] or mutual
+transforms using mutual information as the similarity metric [4]. The final
+deformable alignment utilizes symmetric normalization (SyN) with Gaussian [5] or
+B-spline [6] regularization and a neighborhood cross-correlation [5] or mutual
 information similarity metric. Also explored were the effects of image modality
 choice including all single modalities and combinations of modality pairs
 (specifically, T1-contrast enhanced/T2 and T1-contrast enhanced/FLAIR). Although
@@ -22,7 +22,7 @@ configurations, SyN with Gaussian regularization and neighborhood
 cross-correlation (radius = 2 voxels) using T1-contrast enhanced images was
 selected for a single submission during the validation phase. Further details on
 this internal evaluation, including the precise ANTsPy calls, can be found at a
-dedicated GitHub repository [6].
+dedicated GitHub repository [7].
 
 1. [Avants et al., _A reproducible evaluation of ANTs similarity metric performance in brain image registration_.](https://pubmed.ncbi.nlm.nih.gov/20851191/) 
 2. [Avants et al., _The Insight ToolKit Image Registration Framework_.](http://www.ncbi.nlm.nih.gov/pubmed/24817849) 
