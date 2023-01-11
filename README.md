@@ -13,15 +13,17 @@ followed by optimization of both rigid and affine transforms using mutual inform
 as the similarity metric [3].  The final deformable alignment utilizes symmetric normalization (SyN)
 with Gaussian [4] or B-spline [5] regularization and a neighborhood cross-correlation [4] or 
 mutual information similarity metric.  Although performance with the training data was similar across 
-the resulting six different ANTs variants, SyN with Gaussian regularization and a neighborhood 
-cross-correlation similarity metric (neighborhood radius = 2 voxels) was selected for the validation
-phase.
+the resulting six different ANTs variants, SyN with Gaussian regularization and neighborhood 
+cross-correlation (radius = 2 voxels) was selected for a single submission during the validation phase.  
+Further details on this internal evaluation, including the precise ANTsPy calls, can be found at
+a dedicated GitHub repository [6].
 
 1. [Avants et al., _A reproducible evaluation of ANTs similarity metric performance in brain image registration_.](https://pubmed.ncbi.nlm.nih.gov/20851191/) 
 2. [Avants et al., _The Insight ToolKit Image Registration Framework_.](http://www.ncbi.nlm.nih.gov/pubmed/24817849) 
 3. [Viola and Wells, _Alignment by Maximization of Mutual Information_.](https://ieeexplore.ieee.org/document/466930) 
 4. [Avants et al., _Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain_.](https://pubmed.ncbi.nlm.nih.gov/17659998/) 
 5. [Tustison and Avants, _Explicit B-spline regularization in diffeomorphic image registration_.](http://www.ncbi.nlm.nih.gov/pubmed/24409140) 
+6. https://github.com/ntustison/BraTS-Reg22
 
 ## Modalities to test on training data
 
