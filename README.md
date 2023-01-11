@@ -5,11 +5,23 @@
 
 ## Written description
 
-Testing data were processed using vetted registration parameter sets [1--3] which have been 
+BraTS-Reg22 data were processed using previously vetted and frequently used registration parameter sets [1-2] which have been 
 packaged in the different ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR.  Each of these
-parameter sets consist of multiple transform stages for determining anatomical corresponce.
-Initial center of (intensity) mass alignment is refined by optimization of both rigid and
-affine transforms using mutual information as the similarity metric [4].  Deformable 
+parameter sets consists of multiple transform stages for determining anatomical corresponce.
+Initial linear estimation of transform parameters comprises center of (intensity) mass alignment 
+followed by optimization of both rigid and affine transforms using mutual information 
+as the similarity metric [3].  The final deformable alignment utilizes symmetric normalization (SyN)
+with Gaussian [4] or B-spline [5] regularization and a neighborhood cross-correlation [] or 
+mutual information similarity metric.  Although performance with the training data was similar across 
+the resulting six different ANTs variants, SyN with Gaussian regularization and a neighborhood 
+cross-correlation similarity metric (neighborhood radius = 2 voxels) was selected for the validation
+phase.
+
+[1] [Avants et al., _A reproducible evaluation of ANTs similarity metric performance in brain image registration_.](https://pubmed.ncbi.nlm.nih.gov/20851191/)
+[2] [Avants et al., _The Insight ToolKit Image Registration Framework_.](http://www.ncbi.nlm.nih.gov/pubmed/24817849)
+[3] [Viola and Wells, _Alignment by Maximization of Mutual Information_.](https://ieeexplore.ieee.org/document/466930)
+[4] [Avants et al., _Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain_.](https://pubmed.ncbi.nlm.nih.gov/17659998/)
+[5] [Tustison and Avants, _Explicit B-spline regularization in diffeomorphic image registration_.](http://www.ncbi.nlm.nih.gov/pubmed/24409140)
 
 ## Modalities to test on training data
 
