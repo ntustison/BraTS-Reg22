@@ -5,25 +5,29 @@
 
 ## Written description
 
-BraTS-Reg22 data were processed using previously vetted and frequently used registration parameter sets [1-2] which have been 
-packaged in the different ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR.  Each of these
-parameter sets consists of multiple transform stages for determining anatomical corresponce.
-Initial linear estimation of transform parameters comprises center of (intensity) mass alignment 
-followed by optimization of both rigid and affine transforms using mutual information 
-as the similarity metric [3].  The final deformable alignment utilizes symmetric normalization (SyN)
-with Gaussian [4] or B-spline [5] regularization and a neighborhood cross-correlation [4] or 
-mutual information similarity metric.  Although performance with the training data was similar across 
-the resulting six different ANTs variants, SyN with Gaussian regularization and neighborhood 
-cross-correlation (radius = 2 voxels) was selected for a single submission during the validation phase.  
-Further details on this internal evaluation, including the precise ANTsPy calls, can be found at
-a dedicated GitHub repository [6].
+BraTS-Reg22 data were processed using previously vetted and frequently used
+registration parameter sets [1-2] which have been packaged within the different
+ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR [3]. Each of these parameter
+sets consists of multiple transform stages for determining anatomical
+corresponce. Initial linear estimation of transform parameters comprises center
+of (intensity) mass alignment followed by optimization of both rigid and affine
+transforms using mutual information as the similarity metric [4]. The final
+deformable alignment utilizes symmetric normalization (SyN) with Gaussian [5] or
+B-spline [6] regularization and a neighborhood cross-correlation [5] or mutual
+information similarity metric. Although performance with the training data was
+similar across the resulting six different ANTs variants, SyN with Gaussian
+regularization and neighborhood cross-correlation (radius = 2 voxels) was
+selected for a single submission during the validation phase. Further details on
+this internal evaluation, including the precise ANTsPy calls, can be found at a
+dedicated GitHub repository [7].
 
 1. [Avants et al., _A reproducible evaluation of ANTs similarity metric performance in brain image registration_.](https://pubmed.ncbi.nlm.nih.gov/20851191/) 
 2. [Avants et al., _The Insight ToolKit Image Registration Framework_.](http://www.ncbi.nlm.nih.gov/pubmed/24817849) 
-3. [Viola and Wells, _Alignment by Maximization of Mutual Information_.](https://ieeexplore.ieee.org/document/466930) 
-4. [Avants et al., _Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain_.](https://pubmed.ncbi.nlm.nih.gov/17659998/) 
-5. [Tustison and Avants, _Explicit B-spline regularization in diffeomorphic image registration_.](http://www.ncbi.nlm.nih.gov/pubmed/24409140) 
-6. https://github.com/ntustison/BraTS-Reg22
+3. https://github.com/ANTsX
+4. [Viola and Wells, _Alignment by Maximization of Mutual Information_.](https://ieeexplore.ieee.org/document/466930) 
+5. [Avants et al., _Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain_.](https://pubmed.ncbi.nlm.nih.gov/17659998/) 
+6. [Tustison and Avants, _Explicit B-spline regularization in diffeomorphic image registration_.](http://www.ncbi.nlm.nih.gov/pubmed/24409140) 
+7. https://github.com/ntustison/BraTS-Reg22
 
 ## Modalities to test on training data
 
