@@ -10,7 +10,7 @@ BraTS-Reg22 data were processed using previously vetted and frequently used
 registration parameter sets [1-2] which have been packaged within the different
 ANTsX platforms, specifically ANTs, ANTsPy, and ANTsR [3]. Each of these parameter
 sets consists of multiple transform stages for determining anatomical
-corresponce. Initial linear estimation of transform parameters comprises center
+correspondence. Initial linear estimation of transform parameters comprises center
 of (intensity) mass alignment followed by optimization of both rigid and affine
 transforms using mutual information as the similarity metric [4]. The final
 deformable alignment utilizes symmetric normalization (SyN) with Gaussian [5] or
